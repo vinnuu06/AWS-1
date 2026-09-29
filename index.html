@@ -1,218 +1,915 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Portfolio | BCA Student</title>
+
+    <title>NOVA RTX | 3D GPU</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Three.js Import Map -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+        }
+    }
+    </script>
+
 </head>
+
 
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">&lt;/CYBER&gt;</div>
+    <!-- NAVBAR -->
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav>
+
+        <div class="logo">
+            NOVA<span>RTX</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home">HOME</a>
+            <a href="#features">FEATURES</a>
+            <a href="#specs">SPECS</a>
+            <a href="#contact">CONTACT</a>
+
+        </div>
+
+        <button class="buy-btn">
+            BUY NOW
+        </button>
+
     </nav>
 
-    <!-- Home -->
-    <section id="home" class="hero">
 
-        <div class="hero-text">
-            <p class="small">HELLO, I'M</p>
+    <!-- HERO -->
 
-            <h1>YOUR NAME</h1>
+    <main id="home">
 
-            <h2>BCA Student & <span>Cyber Security Enthusiast</span></h2>
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    NEXT GENERATION GRAPHICS
+                </p>
+
+                <h1>
+                    POWER
+                    <br>
+                    <span>BEYOND</span>
+                    LIMITS.
+                </h1>
+
+                <p class="description">
+
+                    Meet NOVA RTX X90 — a next-generation graphics
+                    processor designed for gaming, AI and
+                    professional creative workloads.
+
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#specs" class="primary">
+                        EXPLORE GPU
+                    </a>
+
+                    <a href="#features" class="secondary">
+                        LEARN MORE
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- THREE.JS CANVAS -->
+
+            <div id="gpu-container">
+
+                <div class="model-label">
+                    <span></span>
+                    3D MODEL
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+
+        <section id="features" class="features">
+
+            <div class="section-heading">
+
+                <p>ENGINEERED FOR THE FUTURE</p>
+
+                <h2>
+                    Built to <span>Perform.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        01
+                    </div>
+
+                    <h3>
+                        RAY TRACING
+                    </h3>
+
+                    <p>
+                        Experience realistic lighting,
+                        reflections and shadows in real time.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        02
+                    </div>
+
+                    <h3>
+                        AI ACCELERATION
+                    </h3>
+
+                    <p>
+                        Dedicated AI hardware delivers
+                        intelligent performance and upscaling.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        03
+                    </div>
+
+                    <h3>
+                        HIGH PERFORMANCE
+                    </h3>
+
+                    <p>
+                        Advanced architecture delivers
+                        high-speed graphics performance.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-number">
+                        04
+                    </div>
+
+                    <h3>
+                        ADVANCED COOLING
+                    </h3>
+
+                    <p>
+                        Triple-fan thermal design keeps the
+                        GPU cool during demanding workloads.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SPECIFICATIONS -->
+
+        <section id="specs" class="specs">
+
+            <div class="spec-image">
+
+                <div class="gpu-symbol">
+                    GPU
+                </div>
+
+            </div>
+
+
+            <div class="spec-content">
+
+                <p class="eyebrow">
+                    TECHNICAL SPECIFICATIONS
+                </p>
+
+                <h2>
+                    X90 <span>ARCHITECTURE</span>
+                </h2>
+
+
+                <div class="spec-list">
+
+                    <div class="spec">
+
+                        <span>CUDA CORES</span>
+                        <strong>16,384</strong>
+
+                    </div>
+
+
+                    <div class="spec">
+
+                        <span>MEMORY</span>
+                        <strong>24 GB GDDR7</strong>
+
+                    </div>
+
+
+                    <div class="spec">
+
+                        <span>MEMORY SPEED</span>
+                        <strong>32 Gbps</strong>
+
+                    </div>
+
+
+                    <div class="spec">
+
+                        <span>BOOST CLOCK</span>
+                        <strong>2.9 GHz</strong>
+
+                    </div>
+
+
+                    <div class="spec">
+
+                        <span>POWER</span>
+                        <strong>450 W</strong>
+
+                    </div>
+
+
+                    <div class="spec">
+
+                        <span>DISPLAY</span>
+                        <strong>8K READY</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section id="contact" class="cta">
 
             <p>
-                Passionate about technology, programming, networking
-                and cyber security. I enjoy learning how systems work
-                and exploring ways to make them more secure.
+                THE FUTURE OF GRAPHICS IS HERE.
             </p>
 
-            <a href="#projects" class="btn">VIEW MY PROJECTS</a>
-        </div>
+            <h2>
+                READY TO
+                <span>LEVEL UP?</span>
+            </h2>
 
-        <div class="terminal">
-            <div class="terminal-top">
-                ● ● ●
-            </div>
+            <button class="cta-button">
+                GET NOVA RTX
+            </button>
 
-            <div class="terminal-body">
-                <p>$ whoami</p>
-                <p class="green">BCA_CYBER_STUDENT</p>
+        </section>
 
-                <p>$ skills</p>
-                <p class="green">HTML | CSS | Java | Python</p>
+    </main>
 
-                <p>$ status</p>
-                <p class="green">Learning Cyber Security...</p>
 
-                <p>$ system.status</p>
-                <p class="green">ONLINE ✓</p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- About -->
-    <section id="about">
-
-        <h2 class="section-title">ABOUT <span>ME</span></h2>
-
-        <div class="about-box">
-
-            <div>
-                <h3>BCA STUDENT</h3>
-
-                <p>
-                    I am a Bachelor of Computer Applications (BCA)
-                    student interested in Cyber Security and Information
-                    Technology.
-                </p>
-
-                <p>
-                    My goal is to build strong technical skills in
-                    programming, networking, web development and
-                    cyber security.
-                </p>
-            </div>
-
-            <div class="info">
-
-                <p><b>🎓 Degree:</b> BCA</p>
-                <p><b>💻 Field:</b> Cyber Security</p>
-                <p><b>🌐 Interest:</b> Ethical Hacking</p>
-                <p><b>📍 Location:</b> India</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-
-        <h2 class="section-title">MY <span>SKILLS</span></h2>
-
-        <div class="skills-container">
-
-            <div class="skill">
-                <h3>HTML</h3>
-                <div class="bar">
-                    <div class="progress html"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <h3>CSS</h3>
-                <div class="bar">
-                    <div class="progress css"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <h3>Java</h3>
-                <div class="bar">
-                    <div class="progress java"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <h3>Python</h3>
-                <div class="bar">
-                    <div class="progress python"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <h3>Networking</h3>
-                <div class="bar">
-                    <div class="progress networking"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <h3>Cyber Security</h3>
-                <div class="bar">
-                    <div class="progress cyber"></div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <h2 class="section-title">MY <span>PROJECTS</span></h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-                <div class="icon">🔐</div>
-                <h3>Password Security Checker</h3>
-                <p>
-                    A web project that checks password strength
-                    and provides security recommendations.
-                </p>
-                <button>VIEW PROJECT</button>
-            </div>
-
-            <div class="project-card">
-                <div class="icon">🌐</div>
-                <h3>Network Security</h3>
-                <p>
-                    A project demonstrating basic networking concepts
-                    and common security practices.
-                </p>
-                <button>VIEW PROJECT</button>
-            </div>
-
-            <div class="project-card">
-                <div class="icon">💻</div>
-                <h3>Student Management System</h3>
-                <p>
-                    A simple application designed to manage
-                    student information and records.
-                </p>
-                <button>VIEW PROJECT</button>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-
-        <h2 class="section-title">CONTACT <span>ME</span></h2>
-
-        <div class="contact-box">
-
-            <p>📧 Email: yourname@email.com</p>
-            <p>📱 Phone: +91 XXXXX XXXXX</p>
-            <p>💼 LinkedIn: linkedin.com/in/yourname</p>
-            <p>🐙 GitHub: github.com/yourname</p>
-
-        </div>
-
-    </section>
+    <!-- FOOTER -->
 
     <footer>
-        <p>© 2026 YOUR NAME | BCA Cyber Security Portfolio</p>
-        <p class="green">SYSTEM SECURE ✓</p>
+
+        <div class="logo">
+            NOVA<span>RTX</span>
+        </div>
+
+        <p>
+            © 2026 Nova Graphics. Concept Website.
+        </p>
+
+        <p>
+            3D ENGINE: THREE.JS
+        </p>
+
     </footer>
 
+
+    <!-- THREE.JS -->
+
+    <script type="module">
+
+        import * as THREE from "three";
+
+        import { OrbitControls }
+        from "three/addons/controls/OrbitControls.js";
+
+
+        /* --------------------------------
+           SCENE
+        -------------------------------- */
+
+        const container =
+            document.getElementById("gpu-container");
+
+        const scene =
+            new THREE.Scene();
+
+        scene.background =
+            new THREE.Color(0x030508);
+
+
+        /* --------------------------------
+           CAMERA
+        -------------------------------- */
+
+        const camera =
+            new THREE.PerspectiveCamera(
+                45,
+                container.clientWidth /
+                container.clientHeight,
+                0.1,
+                100
+            );
+
+        camera.position.set(
+            4,
+            2.5,
+            7
+        );
+
+
+        /* --------------------------------
+           RENDERER
+        -------------------------------- */
+
+        const renderer =
+            new THREE.WebGLRenderer({
+                antialias: true,
+                alpha: true
+            });
+
+        renderer.setPixelRatio(
+            Math.min(window.devicePixelRatio, 2)
+        );
+
+        renderer.setSize(
+            container.clientWidth,
+            container.clientHeight
+        );
+
+        renderer.shadowMap.enabled = true;
+
+        container.appendChild(
+            renderer.domElement
+        );
+
+
+        /* --------------------------------
+           CONTROLS
+        -------------------------------- */
+
+        const controls =
+            new OrbitControls(
+                camera,
+                renderer.domElement
+            );
+
+        controls.enableDamping = true;
+
+        controls.enableZoom = false;
+
+        controls.autoRotate = true;
+
+        controls.autoRotateSpeed = 1.2;
+
+
+        /* --------------------------------
+           LIGHTS
+        -------------------------------- */
+
+        const ambient =
+            new THREE.AmbientLight(
+                0xffffff,
+                1.5
+            );
+
+        scene.add(ambient);
+
+
+        const blueLight =
+            new THREE.PointLight(
+                0x1677ff,
+                35,
+                20
+            );
+
+        blueLight.position.set(
+            4,
+            3,
+            5
+        );
+
+        scene.add(blueLight);
+
+
+        const purpleLight =
+            new THREE.PointLight(
+                0x8b35ff,
+                30,
+                15
+            );
+
+        purpleLight.position.set(
+            -4,
+            1,
+            -3
+        );
+
+        scene.add(purpleLight);
+
+
+        /* --------------------------------
+           GPU GROUP
+        -------------------------------- */
+
+        const gpu =
+            new THREE.Group();
+
+        scene.add(gpu);
+
+
+        /* --------------------------------
+           GPU BODY
+        -------------------------------- */
+
+        const bodyGeometry =
+            new THREE.BoxGeometry(
+                5.4,
+                2.3,
+                0.55
+            );
+
+        const bodyMaterial =
+            new THREE.MeshStandardMaterial({
+
+                color: 0x11151c,
+
+                metalness: 0.8,
+
+                roughness: 0.25
+
+            });
+
+
+        const body =
+            new THREE.Mesh(
+                bodyGeometry,
+                bodyMaterial
+            );
+
+        gpu.add(body);
+
+
+        /* --------------------------------
+           TOP PLATE
+        -------------------------------- */
+
+        const plateGeometry =
+            new THREE.BoxGeometry(
+                5.1,
+                2.05,
+                0.15
+            );
+
+        const plateMaterial =
+            new THREE.MeshStandardMaterial({
+
+                color: 0x202631,
+
+                metalness: 0.7,
+
+                roughness: 0.2
+
+            });
+
+
+        const plate =
+            new THREE.Mesh(
+                plateGeometry,
+                plateMaterial
+            );
+
+        plate.position.z = 0.35;
+
+        gpu.add(plate);
+
+
+        /* --------------------------------
+           GPU EDGE
+        -------------------------------- */
+
+        const edgeGeometry =
+            new THREE.BoxGeometry(
+                5.5,
+                0.08,
+                0.08
+            );
+
+        const edgeMaterial =
+            new THREE.MeshBasicMaterial({
+                color: 0x1683ff
+            });
+
+
+        const edge =
+            new THREE.Mesh(
+                edgeGeometry,
+                edgeMaterial
+            );
+
+        edge.position.z = 0.65;
+
+        gpu.add(edge);
+
+
+        /* --------------------------------
+           FANS
+        -------------------------------- */
+
+        function createFan(xPosition) {
+
+            const fan =
+                new THREE.Group();
+
+            fan.position.x =
+                xPosition;
+
+            fan.position.z =
+                0.52;
+
+
+            /* Fan outer ring */
+
+            const ringGeometry =
+                new THREE.TorusGeometry(
+                    0.72,
+                    0.09,
+                    16,
+                    64
+                );
+
+            const ringMaterial =
+                new THREE.MeshStandardMaterial({
+
+                    color: 0x333b47,
+
+                    metalness: 0.8,
+
+                    roughness: 0.3
+
+                });
+
+
+            const ring =
+                new THREE.Mesh(
+                    ringGeometry,
+                    ringMaterial
+                );
+
+            fan.add(ring);
+
+
+            /* Fan center */
+
+            const centerGeometry =
+                new THREE.CylinderGeometry(
+                    0.25,
+                    0.25,
+                    0.12,
+                    32
+                );
+
+            const centerMaterial =
+                new THREE.MeshStandardMaterial({
+
+                    color: 0x171b22,
+
+                    metalness: 0.9
+
+                });
+
+
+            const center =
+                new THREE.Mesh(
+                    centerGeometry,
+                    centerMaterial
+                );
+
+            center.rotation.x =
+                Math.PI / 2;
+
+            fan.add(center);
+
+
+            /* Fan blades */
+
+            for (
+                let i = 0;
+                i < 7;
+                i++
+            ) {
+
+                const bladeGeometry =
+                    new THREE.BoxGeometry(
+                        0.65,
+                        0.16,
+                        0.06
+                    );
+
+                const bladeMaterial =
+                    new THREE.MeshStandardMaterial({
+
+                        color: 0x414a57,
+
+                        metalness: 0.7,
+
+                        roughness: 0.3
+
+                    });
+
+
+                const blade =
+                    new THREE.Mesh(
+                        bladeGeometry,
+                        bladeMaterial
+                    );
+
+                blade.rotation.z =
+                    (Math.PI * 2 / 7) * i;
+
+                blade.position.x =
+                    Math.cos(
+                        (Math.PI * 2 / 7) * i
+                    ) * 0.3;
+
+                blade.position.y =
+                    Math.sin(
+                        (Math.PI * 2 / 7) * i
+                    ) * 0.3;
+
+                fan.add(blade);
+
+            }
+
+
+            gpu.add(fan);
+
+            return fan;
+
+        }
+
+
+        const fan1 =
+            createFan(-1.65);
+
+        const fan2 =
+            createFan(0);
+
+        const fan3 =
+            createFan(1.65);
+
+
+        /* --------------------------------
+           NVIDIA-STYLE LABEL
+        -------------------------------- */
+
+        const labelGeometry =
+            new THREE.BoxGeometry(
+                1.1,
+                0.35,
+                0.03
+            );
+
+        const labelMaterial =
+            new THREE.MeshStandardMaterial({
+
+                color: 0x1683ff,
+
+                emissive: 0x063d80,
+
+                emissiveIntensity: 1
+
+            });
+
+
+        const label =
+            new THREE.Mesh(
+                labelGeometry,
+                labelMaterial
+            );
+
+        label.position.set(
+            0,
+            -0.65,
+            0.65
+        );
+
+        gpu.add(label);
+
+
+        /* --------------------------------
+           GPU ROTATION
+        -------------------------------- */
+
+        gpu.rotation.y =
+            -0.35;
+
+        gpu.rotation.x =
+            0.15;
+
+
+        /* --------------------------------
+           FLOOR
+        -------------------------------- */
+
+        const floorGeometry =
+            new THREE.CircleGeometry(
+                5,
+                64
+            );
+
+        const floorMaterial =
+            new THREE.MeshBasicMaterial({
+
+                color: 0x07101c,
+
+                transparent: true,
+
+                opacity: 0.7
+
+            });
+
+
+        const floor =
+            new THREE.Mesh(
+                floorGeometry,
+                floorMaterial
+            );
+
+        floor.rotation.x =
+            -Math.PI / 2;
+
+        floor.position.y =
+            -1.8;
+
+        scene.add(floor);
+
+
+        /* --------------------------------
+           PARTICLES
+        -------------------------------- */
+
+        const particleGeometry =
+            new THREE.BufferGeometry();
+
+        const particleCount = 500;
+
+        const positions =
+            new Float32Array(
+                particleCount * 3
+            );
+
+
+        for (
+            let i = 0;
+            i < particleCount;
+            i++
+        ) {
+
+            positions[i * 3] =
+                (Math.random() - 0.5) * 15;
+
+            positions[i * 3 + 1] =
+                (Math.random() - 0.5) * 10;
+
+            positions[i * 3 + 2] =
+                (Math.random() - 0.5) * 10;
+
+        }
+
+
+        particleGeometry.setAttribute(
+            "position",
+            new THREE.BufferAttribute(
+                positions,
+                3
+            )
+        );
+
+
+        const particleMaterial =
+            new THREE.PointsMaterial({
+
+                color: 0x1683ff,
+
+                size: 0.025,
+
+                transparent: true,
+
+                opacity: 0.8
+
+            });
+
+
+        const particles =
+            new THREE.Points(
+                particleGeometry,
+                particleMaterial
+            );
+
+        scene.add(particles);
+
+
+        /* --------------------------------
+           ANIMATION
+        -------------------------------- */
+
+        function animate() {
+
+            requestAnimationFrame(
+                animate
+            );
+
+            controls.update();
+
+            fan1.rotation.z += 0.04;
+
+            fan2.rotation.z += 0.04;
+
+            fan3.rotation.z += 0.04;
+
+            particles.rotation.y += 0.0005;
+
+            renderer.render(
+                scene,
+                camera
+            );
+
+        }
+
+        animate();
+
+
+        /* --------------------------------
+           RESPONSIVE
+        -------------------------------- */
+
+        window.addEventListener(
+            "resize",
+            () => {
+
+                camera.aspect =
+                    container.clientWidth /
+                    container.clientHeight;
+
+                camera.updateProjectionMatrix();
+
+                renderer.setSize(
+                    container.clientWidth,
+                    container.clientHeight
+                );
+
+            }
+        );
+
+    </script>
+
 </body>
+
 </html>
